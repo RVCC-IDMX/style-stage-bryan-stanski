@@ -2,21 +2,203 @@
 Below use @import to include one or more Google Fonts
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 /*
 Below use @import to include one CSS reset or normalize stylesheet of your choice
 */
+
+@import url('https://github.com/vladocar/CSS-Mini-Reset/blob/master/CSS-Mini-Reset.css');
 
 /*
 Make the embedded svg small enough so it does not to overtake the page
 */
 svg {
-  width: 0.75em;
+  width: 1em;
 }
 
 /*
 Add more CSS here to override the default styles
 as needed from the reset or normalize stylesheet
 
+
 Refer to README.md for more information
 
 */
+
+:root {
+  --background-color-light-blue: rgba(125, 186, 247, 0.932);
+  --bg-light-gray: rgb(128, 128, 128);
+
+  --link-color-dark: #06021f;
+
+  --border-color-black: black;
+  --border-color-gray: rgb(65, 65, 65);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Lobster';
+  text-align: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+a {
+  color: #000ecf;
+  font-weight: bold;
+  font-size: 110%;
+}
+
+.skip-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 3px var(--border-color-black);
+  border-style: none none solid none;
+  background: rgba(125, 186, 247, 0.932);
+  padding: 5px;
+  font-size: 20px;
+  color: var(--link-color-dark);
+}
+
+header > .container > h2 {
+  margin-bottom: 35px;
+}
+
+.container > p {
+  text-align: center;
+}
+
+header > .container > a {
+  display: flex;
+  justify-content: center;
+  width: 160px;
+  margin: 0 auto;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 0.4;
+  text-decoration: underline;
+  text-shadow: 3px 2.4px #0e0202;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #f8f8ff;
+  background: linear-gradient(
+    rgba(218, 40, 40, 0.773) 0 50%,
+    #db581bd0 100% 50%
+  );
+  font-family: 'Nunito';
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+strong {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+header > .container > .link-github {
+  border: solid 3px var(--border-color-black);
+  border-radius: 0.5rem;
+  background: var(--background-color-light-blue);
+  padding: 8px;
+  padding-top: 10px;
+  color: var(--link-color-dark);
+}
+
+nav > ul {
+  background: var(--background-color-light-blue);
+  border: solid 3px var(--border-color-black);
+  border-radius: 1rem;
+  padding: 0;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  text-align: center;
+}
+
+nav > ul > li {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+nav > ul > li > a {
+  color: #3719fa;
+}
+
+#about > .container > h2 {
+  margin-top: 50px;
+}
+
+blockquote {
+  border: solid 8px var(--border-color-gray);
+  border-radius: 1rem;
+  background-color: var(--bg-light-gray);
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.container > ul {
+  border: solid 8px var(--border-color-gray);
+  border-radius: 1rem;
+  background-color: var(--bg-light-gray);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#guidelines > .container > h2,
+h3 {
+  margin-top: 50px;
+  margin-bottom: -5px;
+}
+
+.link-guidelines {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#contribute > h2 {
+  margin-bottom: -30px;
+}
+
+footer > .container {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+}
+
+footer > .container > a {
+  padding-top: 10px;
+}
+
+.profile > .container > a {
+  display: grid;
+  text-align: center;
+}
+
+.link-allstyles {
+  display: grid;
+  text-align: center;
+}
