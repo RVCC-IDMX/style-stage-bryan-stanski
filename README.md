@@ -4,7 +4,7 @@ Features and design choices used on my page:
 
 - including a reset/normalize library
 - using custom properties
-- using fliud sizing and spacing
+- using fluid sizing and spacing
 - typography effects
 - styling the background(s)
 - the layout at larger widths
